@@ -8,7 +8,8 @@
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
       #map {
-        height: 100%;
+        /* Window height - header height */
+        height: calc(100% - 24px);
       }
       /* Optional: Makes the sample page fill the window. */
       html, body {
@@ -36,6 +37,7 @@
 
       .header {
         padding: 4px;
+        height: 24px;
         background-color: lightblue;
         font-family: Roboto;
       }
